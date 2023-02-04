@@ -1,12 +1,6 @@
 [gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Scripts/UI/StartMenu.gd" type="Script" id=1]
-[ext_resource path="res://Assets/PixelFont.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Assets/PixelFont.tres" type="Theme" id=3]
-[ext_resource path="res://Assets/Sound/powerUp2.ogg" type="AudioStream" id=4]
-[ext_resource path="res://Assets/Tilemap.png" type="Texture" id=5]
-[ext_resource path="res://Actors/Enemies/Enemy.tscn" type="PackedScene" id=6]
-
 
 [sub_resource type="DynamicFont" id=13]
 size = 71
@@ -18,33 +12,6 @@ grow_begin = 2.0
 thickness = 10
 
 [sub_resource type="Theme" id=1]
-
-[sub_resource type="DynamicFont" id=3]
-size = 72
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 34
-font_data = ExtResource( 2 )
-
-[sub_resource type="StreamTexture" id=5]
-load_path = "res://.import/DancingPlayer.png-346429216746cae49a837f32050e60ce.stex"
-
-[sub_resource type="Animation" id=6]
-length = 0.2
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = false
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ 17.0 ]
-}
 
 [sub_resource type="Animation" id=7]
 length = 2.8
