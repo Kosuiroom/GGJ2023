@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Kitchen Living room.png-80107c960cf7b2705ec352ff29c35699.stex"
+path="res://.import/Sprite-0006.png-d86614c8d308fbd5591b17b93428688d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Kitchen Living room.png"
-dest_files=[ "res://.import/Kitchen Living room.png-80107c960cf7b2705ec352ff29c35699.stex" ]
+source_file="res://Assets/Sprite-0006.png"
+dest_files=[ "res://.import/Sprite-0006.png-d86614c8d308fbd5591b17b93428688d.stex" ]
 
 [params]
 
