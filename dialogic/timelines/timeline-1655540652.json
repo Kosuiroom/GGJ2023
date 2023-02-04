@@ -1,16 +1,56 @@
 {
 	"events": [
 		{
-			"character": "character-1655553080.json",
+			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "hello"
+			"text": "Huh, I forget I had a gym membership.."
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Maybe I should make an effort for once?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
 		},
 		{
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "hello"
+			"text": "Lets fucking go!"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "what am I? a Monkey?"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_022",
@@ -18,8 +58,8 @@
 		}
 	],
 	"metadata": {
-		"dialogic-version": "1.4.2 - Dev",
+		"dialogic-version": "1.4.5",
 		"file": "timeline-1655540652.json",
-		"name": "test"
+		"name": "bowl"
 	}
 }

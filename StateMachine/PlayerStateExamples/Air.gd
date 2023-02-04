@@ -1,7 +1,6 @@
 # Air.gd
 extends PlayerState
 
-
 # If we get a message asking us to jump, we jump.
 func enter(msg := {}) -> void:
 	if msg.has("do_jump"):
