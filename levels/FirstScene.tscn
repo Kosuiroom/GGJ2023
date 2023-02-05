@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://Actors/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/UI black bar.png" type="Texture" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://Assets/Shower.png" type="Texture" id=20]
 [ext_resource path="res://Assets/purrple-cat-spring-showers.mp3" type="AudioStream" id=21]
 [ext_resource path="res://Items/items.tres" type="Material" id=22]
+[ext_resource path="res://Assets/Bed.png" type="Texture" id=23]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1535, 17.5 )
@@ -58,6 +59,9 @@ extents = Vector2( 43.5, 133.5 )
 
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 37, 77 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 68, 39 )
 
 [node name="FirstScene" type="Node2D"]
 script = ExtResource( 4 )
@@ -266,7 +270,11 @@ position = Vector2( -385, 358 )
 shape = SubResource( 11 )
 
 [node name="picture" type="Node2D" parent="Bedroom"]
+position = Vector2( 38, -1 )
 script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
 itemName = "picture"
 dialog = "picture"
 moodscore = 15
@@ -281,6 +289,24 @@ texture = ExtResource( 13 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/picture/itemname"]
 position = Vector2( -688, 391 )
 shape = SubResource( 12 )
+
+[node name="bed" type="Node2D" parent="Bedroom"]
+position = Vector2( -931, 419 )
+script = ExtResource( 7 )
+itemName = "bed"
+dialog = "bed"
+moodscore = 15
+
+[node name="Sprite" type="Sprite" parent="Bedroom/bed"]
+position = Vector2( -527, 300 )
+scale = Vector2( 4.42969, 3.83667 )
+texture = ExtResource( 23 )
+
+[node name="itemname" type="Area2D" parent="Bedroom/bed"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/bed/itemname"]
+position = Vector2( 58, 29 )
+shape = SubResource( 18 )
 
 [node name="bookshelf" type="Node2D" parent="Bedroom"]
 material = ExtResource( 22 )
@@ -384,5 +410,7 @@ bus = "SFX"
 [connection signal="body_exited" from="Bedroom/ward/itemname" to="Bedroom/ward" method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="Bedroom/picture/itemname" to="Bedroom/picture" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Bedroom/picture/itemname" to="Bedroom/picture" method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="Bedroom/bed/itemname" to="Bedroom/bed" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Bedroom/bed/itemname" to="Bedroom/bed" method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="Bedroom/bookshelf/itemname" to="Bedroom/bookshelf" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Bedroom/bookshelf/itemname" to="Bedroom/bookshelf" method="_on_Area2D_body_exited"]
