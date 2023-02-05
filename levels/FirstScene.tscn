@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Actors/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/UI black bar.png" type="Texture" id=2]
@@ -24,7 +24,10 @@ extents = Vector2( 6, 198.75 )
 extents = Vector2( 9, 199.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 108, 141.5 )
+extents = Vector2( 96, 136.25 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 47, 84.75 )
 
 [node name="FirstScene" type="Node2D"]
 script = ExtResource( 4 )
@@ -122,14 +125,15 @@ texture = ExtResource( 13 )
 [node name="itemname" type="Area2D" parent="Bedroom/picture"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/picture/itemname"]
-position = Vector2( -379, 352 )
-shape = SubResource( 4 )
+position = Vector2( -693, 392.25 )
+shape = SubResource( 5 )
 
 [node name="mood" type="TextureProgress" parent="."]
-margin_left = -144.0
-margin_top = -194.0
-margin_right = 60.0
-margin_bottom = 38.0
+visible = false
+margin_left = -143.0
+margin_top = -196.0
+margin_right = 61.0
+margin_bottom = 36.0
 rect_scale = Vector2( 3, 4 )
 min_value = 1.0
 max_value = 200.0
@@ -142,6 +146,7 @@ fill_mode = 3
 script = ExtResource( 10 )
 
 [node name="mood2" type="TextureProgress" parent="."]
+visible = false
 margin_left = 886.0
 margin_top = -186.0
 margin_right = 1090.0
@@ -158,6 +163,7 @@ fill_mode = 3
 script = ExtResource( 11 )
 
 [node name="mood3" type="TextureProgress" parent="."]
+visible = false
 margin_left = -1151.0
 margin_top = -186.0
 margin_right = -947.0

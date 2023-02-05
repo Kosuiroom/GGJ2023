@@ -7,6 +7,7 @@ func physics_update(_delta: float) -> void:
 
 	if player.dialogstarted == false:
 		if Input.is_action_just_pressed("interact"):
+			print("player.nearitem")
 			player.dialogstarted = true
 			print("player interacted with: ", player.nearitem)
 			var dialog = Dialogic.start(player.nearitem)
