@@ -4,12 +4,14 @@ onready var kitchcam = $kitchenkamera
 onready var bathcam = $bathcamera
 onready var bedcam = $bedcamera
 onready var audio = $AudioStreamPlayer2D
+onready var audioTwo = $AudioStreamPlayer2D2
 var inkitch := true
 var inbed := false
 var inbath := false
 
 func _ready():
 	audio.play()
+	audioTwo.play()
 
 func _on_tobath_body_exited(body):
 	if body.name == 'Player' && inkitch == false && inbath == true:
