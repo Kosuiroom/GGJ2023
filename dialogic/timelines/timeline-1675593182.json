@@ -1,0 +1,73 @@
+{
+	"events": [
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WOH! when was the last time I took care of the sink.. "
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "this needs to be done now.. or?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "geez, what was growing in here! good I took care of it before I started a world event"
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I mean, it has been fine for a month or so.. could go a bit longer"
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "-",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675593182.json",
+		"name": "sink"
+	}
+}

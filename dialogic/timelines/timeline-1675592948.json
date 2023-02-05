@@ -1,0 +1,73 @@
+{
+	"events": [
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why do I always leave the shower like this.. even worse than leaving dishes"
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I should force my selfe to clean this but..."
+		},
+		{
+			"choice": "Do it",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Now I can rest easy that I will actually have a good shower"
+		},
+		{
+			"choice": "Don't",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "it's fiiiiine"
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "-",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675592948.json",
+		"name": "shower"
+	}
+}
