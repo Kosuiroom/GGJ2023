@@ -33,6 +33,7 @@ func after_dialog(timeline_name):
 	
 	if timeline_name == "endgame":
 		print("ending game")
+		get_tree().change_scene("res://UI/Endgame.tscn")
 	
 	print("Dialog ended")
 	player.dialogstarted = false
