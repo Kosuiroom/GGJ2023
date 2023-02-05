@@ -1,8 +1,12 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=76 format=2]
 
 [ext_resource path="res://Assets/PixelFont.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Rain Animation_1029x605.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/UI/PIXEL CRAFT.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Scripts/UI/Endgame.gd" type="Script" id=4]
-
+[ext_resource path="res://Assets/UI_button selected.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI_button un-selected.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Tofuchomp_UI Reutrn to start.png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -10,20 +14,273 @@ font_data = ExtResource( 1 )
 [sub_resource type="Theme" id=2]
 default_font = SubResource( 1 )
 
+[sub_resource type="DynamicFont" id=78]
+font_data = ExtResource( 3 )
+
 [sub_resource type="Theme" id=13]
 
-[sub_resource type="DynamicFont" id=14]
-size = 45
-outline_size = 1
-font_data = ExtResource( 1 )
+[sub_resource type="DynamicFont" id=75]
+size = 22
+use_mipmaps = true
+font_data = ExtResource( 3 )
 
-[sub_resource type="Theme" id=4]
+[sub_resource type="DynamicFont" id=77]
+size = 20
+font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=5]
-size = 72
-font_data = ExtResource( 1 )
+[sub_resource type="DynamicFont" id=76]
+size = 18
+font_data = ExtResource( 3 )
 
-[node name="Control" type="Control"]
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 2 )
+region = Rect2( 1029, 0, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 2 )
+region = Rect2( 2058, 0, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 2 )
+region = Rect2( 3087, 0, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 2 )
+region = Rect2( 4116, 0, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 2 )
+region = Rect2( 5145, 0, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 2 )
+region = Rect2( 6174, 0, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 2 )
+region = Rect2( 7203, 0, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 2 )
+region = Rect2( 8232, 0, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 605, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 2 )
+region = Rect2( 1029, 605, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 2 )
+region = Rect2( 2058, 605, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 2 )
+region = Rect2( 3087, 605, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 2 )
+region = Rect2( 4116, 605, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 2 )
+region = Rect2( 5145, 605, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 2 )
+region = Rect2( 6174, 605, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 2 )
+region = Rect2( 7203, 605, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 2 )
+region = Rect2( 8232, 605, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 1210, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 2 )
+region = Rect2( 1029, 1210, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 2 )
+region = Rect2( 2058, 1210, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 2 )
+region = Rect2( 3087, 1210, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 2 )
+region = Rect2( 4116, 1210, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 2 )
+region = Rect2( 5145, 1210, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 2 )
+region = Rect2( 6174, 1210, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 2 )
+region = Rect2( 7203, 1210, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 2 )
+region = Rect2( 8232, 1210, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 1815, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 2 )
+region = Rect2( 1029, 1815, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 2 )
+region = Rect2( 2058, 1815, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 2 )
+region = Rect2( 3087, 1815, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=45]
+atlas = ExtResource( 2 )
+region = Rect2( 4116, 1815, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=46]
+atlas = ExtResource( 2 )
+region = Rect2( 5145, 1815, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 2 )
+region = Rect2( 6174, 1815, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 2 )
+region = Rect2( 7203, 1815, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 2 )
+region = Rect2( 8232, 1815, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 2420, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 2 )
+region = Rect2( 1029, 2420, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 2 )
+region = Rect2( 2058, 2420, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 2 )
+region = Rect2( 3087, 2420, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 2 )
+region = Rect2( 4116, 2420, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 2 )
+region = Rect2( 5145, 2420, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 2 )
+region = Rect2( 6174, 2420, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 2 )
+region = Rect2( 7203, 2420, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 2 )
+region = Rect2( 8232, 2420, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 3025, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 2 )
+region = Rect2( 1029, 3025, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=61]
+atlas = ExtResource( 2 )
+region = Rect2( 2058, 3025, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=62]
+atlas = ExtResource( 2 )
+region = Rect2( 3087, 3025, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=63]
+atlas = ExtResource( 2 )
+region = Rect2( 4116, 3025, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=64]
+atlas = ExtResource( 2 )
+region = Rect2( 5145, 3025, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=65]
+atlas = ExtResource( 2 )
+region = Rect2( 6174, 3025, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=66]
+atlas = ExtResource( 2 )
+region = Rect2( 7203, 3025, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=67]
+atlas = ExtResource( 2 )
+region = Rect2( 8232, 3025, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=68]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 3630, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=69]
+atlas = ExtResource( 2 )
+region = Rect2( 1029, 3630, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=70]
+atlas = ExtResource( 2 )
+region = Rect2( 2058, 3630, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=71]
+atlas = ExtResource( 2 )
+region = Rect2( 3087, 3630, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=72]
+atlas = ExtResource( 2 )
+region = Rect2( 4116, 3630, 1029, 605 )
+
+[sub_resource type="AtlasTexture" id=73]
+atlas = ExtResource( 2 )
+region = Rect2( 5145, 3630, 1029, 605 )
+
+[sub_resource type="SpriteFrames" id=74]
+animations = [ {
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ) ],
+"loop": true,
+"name": "default",
+"speed": 50.0
+} ]
+
+[node name="Control2" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( 409, 70 )
@@ -38,49 +295,50 @@ rect_scale = Vector2( 4.56, 6.32 )
 color = Color( 0.129412, 0.129412, 0.137255, 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 511.0
-margin_top = 134.0
-margin_right = 570.0
-margin_bottom = 165.0
-rect_scale = Vector2( 3, 3 )
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = -231.0
+margin_right = 592.0
+margin_bottom = 4.0
 theme = SubResource( 2 )
-text = "TIME:"
-align = 2
+custom_fonts/font = SubResource( 78 )
+text = "Downloaded assets:
+Spring Showers by Purrple Cat | https://purrplecat.com/
+
+Music promoted on https://www.chosic.com/free-music/all/
+
+Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+https://creativecommons.org/licenses/by-sa/3.0/"
 
 [node name="RichTextLabel3" type="Label" parent="."]
-margin_left = 752.0
-margin_top = 386.0
-margin_right = 1597.0
-margin_bottom = 743.0
+margin_left = 621.0
+margin_top = 408.0
+margin_right = 1466.0
+margin_bottom = 765.0
 theme = SubResource( 13 )
-custom_fonts/font = SubResource( 14 )
-text = "MADE BY: 
-DAVID BYSTRÖM
-PONTUS GÖTH
-TOWE ANDERSSON
+custom_fonts/font = SubResource( 75 )
+text = "MADE BY 
+DAVID BYSTRÖM - GRAPHIC, ETC.
+PONTUS GÖTH - PROGRAMMING, ETC.
 
 "
 
 [node name="RichTextLabel2" type="Label" parent="."]
 modulate = Color( 1, 0.627451, 0.207843, 1 )
-margin_left = 96.0
-margin_top = 386.0
-margin_right = 576.0
-margin_bottom = 586.0
+margin_left = 4.0
+margin_top = 312.0
+margin_right = 484.0
+margin_bottom = 512.0
 theme = SubResource( 13 )
-custom_fonts/font = SubResource( 14 )
-text = "FOR GMTK 2022
-GAMEJAM
+custom_fonts/font = SubResource( 77 )
+text = "FOR GLOBAL GAME JAM 2023 
 "
 
-[node name="RichTextLabel" type="Label" parent="."]
-margin_left = 444.0
-margin_top = 59.0
-margin_right = 884.0
-margin_bottom = 123.0
-theme = SubResource( 13 )
-custom_fonts/font = SubResource( 14 )
-text = "GAME CLEARED"
+[node name="MoodScoreResult" type="Label" parent="."]
+margin_right = 251.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 76 )
 
 [node name="MenuItems" type="VBoxContainer" parent="."]
 modulate = Color( 0.972656, 0.970903, 0.961258, 1 )
@@ -88,22 +346,32 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -398.0
-margin_top = -133.0
-margin_right = 424.0
-margin_bottom = 123.0
+margin_left = -239.0
+margin_top = -322.0
+margin_right = 583.0
+margin_bottom = -66.0
+rect_scale = Vector2( 4, 4 )
 
-[node name="Return" type="Button" parent="MenuItems"]
+[node name="Return" type="TextureButton" parent="MenuItems"]
 margin_right = 822.0
-margin_bottom = 8.0
-theme = SubResource( 4 )
-custom_fonts/font = SubResource( 5 )
-text = "RETURN TO START "
-flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+margin_bottom = 128.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 6 )
+texture_focused = ExtResource( 5 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 369.0
+margin_top = 177.0
+margin_right = 625.0
+margin_bottom = 305.0
+texture = ExtResource( 7 )
 
 [node name="Buttonsound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 559, 295 )
+frames = SubResource( 74 )
+frame = 14
+playing = true
 
 [connection signal="pressed" from="MenuItems/Return" to="." method="_on_Return_pressed"]

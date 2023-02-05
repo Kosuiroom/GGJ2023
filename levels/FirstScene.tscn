@@ -21,7 +21,7 @@
 [ext_resource path="res://Assets/Laundry Basket.png" type="Texture" id=19]
 [ext_resource path="res://Assets/Shower.png" type="Texture" id=20]
 [ext_resource path="res://Assets/purrple-cat-spring-showers.mp3" type="AudioStream" id=21]
-[ext_resource path="res://Assets/mixkit-light-rain-looping-1249.wav" type="AudioStream" id=22]
+[ext_resource path="res://Items/items.tres" type="Material" id=22]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1535, 17.5 )
@@ -283,6 +283,7 @@ position = Vector2( -688, 391 )
 shape = SubResource( 12 )
 
 [node name="bookshelf" type="Node2D" parent="Bedroom"]
+material = ExtResource( 22 )
 script = ExtResource( 7 )
 itemName = "bookshelf"
 dialog = "bookshelf"
@@ -361,7 +362,6 @@ stream = ExtResource( 21 )
 bus = "Music"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 22 )
 bus = "SFX"
 
 [connection signal="body_exited" from="tobath" to="." method="_on_tobath_body_exited"]

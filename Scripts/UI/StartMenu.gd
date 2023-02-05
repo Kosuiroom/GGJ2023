@@ -1,7 +1,7 @@
 extends Control
 
 onready var startbtn = $MenuItems/StartButton
-onready var Buttonsound = $Buttonsound
+
 
 
 

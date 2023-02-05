@@ -105,13 +105,17 @@ _global_script_class_icons={
 [application]
 
 config/name="GGJ2023"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://UI/Start.tscn"
 
 [autoload]
 
 EventBuss="*res://Scripts/Autoloaded/EventBuss.gd"
 KeyPersistance="*res://Scripts/Autoloaded/KeyPersistance.gd"
 GlobalVariables="*res://Scripts/Autoloaded/GlobalVariables.gd"
+
+[display]
+
+window/size/resizable=false
 
 [editor_plugins]
 
