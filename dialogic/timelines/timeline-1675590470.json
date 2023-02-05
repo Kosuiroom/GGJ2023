@@ -4,7 +4,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I am a little hungry... but as usual I am bad at cooking regularly.."
+			"text": "I'm a little hungry... What do I have laying around? A old pizza kit... or a chicken sallad (how did that get here)?"
 		},
 		{
 			"character": "",
@@ -13,10 +13,10 @@
 
 			],
 			"portrait": "",
-			"question": "But I do have a sallad and some left over pizza.. which should I eat?"
+			"question": "Start eat sallad?"
 		},
 		{
-			"choice": "Pizza",
+			"choice": "Yes",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -34,10 +34,10 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "oohh yeah, peperoni is so good"
+			"text": "Not everyday can be a fatty pizza day. I need to feel cleaner."
 		},
 		{
-			"choice": "Sallad",
+			"choice": "No",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -46,7 +46,7 @@
 		{
 			"definition": "1675523733-648",
 			"event_id": "dialogic_014",
-			"operation": "+",
+			"operation": "-",
 			"random_upper_limit": 100,
 			"set_random": false,
 			"set_value": "10"
@@ -55,7 +55,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "bland.. boring.. but hey this should keep me going for a while"
+			"text": "It got salami in it... That seems very good!"
 		},
 		{
 			"event_id": "dialogic_013"

@@ -4,34 +4,34 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I am soo sleepy, I am going to bed now"
+			"text": "I am soo sleepy, I should go to bed."
 		},
 		{
-			"condition": "",
+			"condition": ">=",
 			"definition": "1675523733-648",
 			"event_id": "dialogic_012",
-			"value": "20"
+			"value": "40"
 		},
 		{
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Wow I actually changed my life"
+			"text": "Today was a good day!"
 		},
 		{
 			"event_id": "dialogic_013"
 		},
 		{
-			"condition": "",
+			"condition": "<=",
 			"definition": "1675523733-648",
 			"event_id": "dialogic_012",
-			"value": "10"
+			"value": "30"
 		},
 		{
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I did some shitty choices so I will not get better"
+			"text": "Just another day gone..."
 		},
 		{
 			"event_id": "dialogic_013"

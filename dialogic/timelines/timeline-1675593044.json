@@ -2,15 +2,21 @@
 	"events": [
 		{
 			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Is it really ok to use the same cloths for a month?"
+		},
+		{
+			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "Is it really ok to use the same cloths for a month?"
+			"question": "Start do the laundry?"
 		},
 		{
-			"choice": "Ofcourse",
+			"choice": "Yes",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -20,33 +26,33 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I use perfume, that should be enough"
-		},
-		{
-			"definition": "1675523733-648",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
-			"choice": " no way!",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"character": "character-1655540927.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "This is not ok.. my mom tought me better than this"
+			"text": "Finally can use some good smelling stuff."
 		},
 		{
 			"definition": "1675523733-648",
 			"event_id": "dialogic_014",
 			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I got deo and perfume. That's enough for me."
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "-",
 			"random_upper_limit": 100,
 			"set_random": false,
 			"set_value": "10"

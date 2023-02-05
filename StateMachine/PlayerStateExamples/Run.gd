@@ -10,7 +10,7 @@ func physics_update(delta: float) -> void:
 #		return
 	if GlobalVariables.MoodScore as int <= 30:
 		player.anim.play("walking_sad")
-	if GlobalVariables.MoodScore as int >= 30:
+	if GlobalVariables.MoodScore as int >= 40:
 		player.anim.play("walking_happy")
 	# We move the run-specific input code to the state.
 	# A good alternative would be to define a `get_input_direction()` function on the `Player.gd`

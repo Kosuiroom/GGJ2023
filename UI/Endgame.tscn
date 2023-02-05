@@ -29,7 +29,8 @@ size = 20
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=76]
-size = 18
+size = 20
+use_filter = true
 font_data = ExtResource( 3 )
 
 [sub_resource type="AtlasTexture" id=14]
@@ -336,8 +337,7 @@ text = "FOR GLOBAL GAME JAM 2023
 "
 
 [node name="MoodScoreResult" type="Label" parent="."]
-margin_right = 251.0
-margin_bottom = 64.0
+margin_bottom = 50.0
 custom_fonts/font = SubResource( 76 )
 
 [node name="MenuItems" type="VBoxContainer" parent="."]
@@ -371,7 +371,7 @@ texture = ExtResource( 7 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 559, 295 )
 frames = SubResource( 74 )
-frame = 49
+frame = 14
 playing = true
 
 [connection signal="pressed" from="MenuItems/Return" to="." method="_on_Return_pressed"]

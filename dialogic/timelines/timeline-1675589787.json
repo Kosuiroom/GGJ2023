@@ -4,7 +4,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "My gym card.. how long has this been laying here?"
+			"text": "My gym card... I got it 4 years ago... That's... sad."
 		},
 		{
 			"character": "character-1655540927.json",
@@ -13,7 +13,7 @@
 
 			],
 			"portrait": "",
-			"question": "It has been so long.. I should start going? I heard even for a rabbit it is good to do some training"
+			"question": "Start going to the gym?"
 		},
 		{
 			"choice": "Yes",
@@ -34,7 +34,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Let's GOOOO! This rabbit gonna keep jumping high for a long time!"
+			"text": "I gotta start someday, which is now! "
 		},
 		{
 			"choice": "No",
@@ -55,7 +55,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Eh, the sofa is too nice with a good drink and I feel fine anyway"
+			"text": "I'll start tomorrow. I promise... This time for sure."
 		},
 		{
 			"event_id": "dialogic_013"

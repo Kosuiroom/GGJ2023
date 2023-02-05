@@ -213,10 +213,11 @@ texture = ExtResource( 14 )
 [node name="itemname" type="Area2D" parent="kitchen/dishes"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="kitchen/dishes/itemname"]
-position = Vector2( 734, 407 )
+position = Vector2( 695, 406 )
 shape = SubResource( 6 )
 
 [node name="fridge" type="Node2D" parent="kitchen"]
+position = Vector2( 1, -10 )
 script = ExtResource( 7 )
 itemName = "fridge"
 dialog = "fridge"

@@ -316,7 +316,7 @@ texture = ExtResource( 5 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 519, 272 )
 frames = SubResource( 74 )
-frame = 43
+frame = 18
 playing = true
 
 [node name="rain" type="AudioStreamPlayer" parent="."]

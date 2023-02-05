@@ -4,7 +4,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "It would be nice to watch some TV today.."
+			"text": "The sofa has my butt imprint on it... That's a BAD sign."
 		},
 		{
 			"character": "character-1655540927.json",
@@ -13,7 +13,7 @@
 
 			],
 			"portrait": "",
-			"question": "Maybe I should?"
+			"question": "Watch TV?"
 		},
 		{
 			"choice": "yes",
@@ -23,18 +23,10 @@
 			"value": ""
 		},
 		{
-			"definition": "1675523733-648",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ah! so relaxing.. a drink with this would be great too! "
+			"text": "I feel a little thirsty to this..."
 		},
 		{
 			"character": "character-1655540927.json",
@@ -43,10 +35,10 @@
 
 			],
 			"portrait": "",
-			"question": "but what should I drink..."
+			"question": "What to drink?"
 		},
 		{
-			"choice": "Alkohol",
+			"choice": "Whiskey",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -64,10 +56,10 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "My favorit brandy always works"
+			"text": "Its thursday so almost friday. So why not drink a little early."
 		},
 		{
-			"choice": "tee",
+			"choice": "Tea",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -85,7 +77,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I do like alkohol but sometimes it feels good to just have some tee"
+			"text": "*hmm*... Smells so nice and feels so calming. I should drink this one more."
 		},
 		{
 			"event_id": "dialogic_013"

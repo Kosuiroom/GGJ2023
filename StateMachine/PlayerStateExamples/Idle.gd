@@ -7,7 +7,7 @@ func physics_update(_delta: float) -> void:
 	
 	if GlobalVariables.MoodScore as int <= 30:
 		player.anim.play("idle_sad")
-	if GlobalVariables.MoodScore as int >= 30:
+	if GlobalVariables.MoodScore as int >= 40:
 		player.anim.play("idle_happy")
 		
 	if player.dialogstarted == false && GlobalVariables.totalactions as int > 0:

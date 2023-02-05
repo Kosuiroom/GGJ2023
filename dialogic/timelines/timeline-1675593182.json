@@ -13,7 +13,7 @@
 
 			],
 			"portrait": "",
-			"question": "this needs to be done now.. or?"
+			"question": "Start cleaning the sink?"
 		},
 		{
 			"choice": "Yes",
@@ -26,7 +26,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "geez, what was growing in here! good I took care of it before I started a world event"
+			"text": "geez, what was growing in here! good I took care of it before I started a world event."
 		},
 		{
 			"definition": "1675523733-648",
@@ -47,7 +47,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I mean, it has been fine for a month or so.. could go a bit longer"
+			"text": "I mean, it has been fine for a month or so.. could go a bit longer."
 		},
 		{
 			"definition": "1675523733-648",

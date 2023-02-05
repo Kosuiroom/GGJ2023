@@ -4,7 +4,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I always leave dirty dishes.."
+			"text": "Another mountain of dried food on the plates... "
 		},
 		{
 			"character": "character-1655540927.json",
@@ -13,7 +13,7 @@
 
 			],
 			"portrait": "",
-			"question": "Maybe I should clean this up?"
+			"question": "Start doing  the dishes?"
 		},
 		{
 			"choice": "yes",
@@ -34,7 +34,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "It was a lot of work but now the room feels better to be in"
+			"text": "Huff! It's been so long since it was clean and clear here! I got so much space now!"
 		},
 		{
 			"choice": "no",
@@ -55,7 +55,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Who even cares, I do not get a lot of guests anyway"
+			"text": "I'll never have anyone around, so who cares If I use the same mug 3 weeks in a row?"
 		},
 		{
 			"event_id": "dialogic_013"
