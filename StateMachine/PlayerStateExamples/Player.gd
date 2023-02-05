@@ -3,6 +3,7 @@ extends KinematicBody2D
 
 ###Node initialization
 onready var fsm := $StateMachine
+onready var anim := $AnimatedSprite
 
 var velocity
 var speed: = 200.0

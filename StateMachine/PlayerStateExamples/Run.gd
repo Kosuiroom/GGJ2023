@@ -8,7 +8,10 @@ func physics_update(delta: float) -> void:
 #	if not player.is_on_floor():
 #		state_machine.transition_to("Air")
 #		return
-
+	if GlobalVariables.MoodScore as int <= 30:
+		player.anim.play("walking_sad")
+	if GlobalVariables.MoodScore as int >= 30:
+		player.anim.play("walking_happy")
 	# We move the run-specific input code to the state.
 	# A good alternative would be to define a `get_input_direction()` function on the `Player.gd`
 	# script to avoid duplicating these lines in every script.
@@ -16,6 +19,11 @@ func physics_update(delta: float) -> void:
 		Input.get_action_strength("ui_right")
 		- Input.get_action_strength("ui_left")
 	)
+	
+	if Input.get_action_strength("ui_left"):
+		player.anim.flip_h = true
+	if Input.get_action_strength("ui_right"):
+		player.anim.flip_h = false
 	
 	
 	player.velocity.x = player.speed * input_direction_x

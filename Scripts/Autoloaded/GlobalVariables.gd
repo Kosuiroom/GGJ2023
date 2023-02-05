@@ -1,3 +1,4 @@
 extends Node
 
-var MoodScore = 100
+var MoodScore = 0
+var totalactions = 5
