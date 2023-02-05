@@ -1,0 +1,97 @@
+{
+	"events": [
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "All these books still in plastic and collecting dust..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Start reading something?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I've only read 10 pages so far but I think I'm hooked!\nI should try read a few pages everyday from now on atleast."
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Who really read books? That's why movies exists instead."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675588170.json",
+		"name": "bookshelf"
+	}
+}

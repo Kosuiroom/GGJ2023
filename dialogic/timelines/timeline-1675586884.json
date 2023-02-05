@@ -4,7 +4,75 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "It's been a while since I called home."
+			"text": "It's been too long since I called home.\nOr anyone really."
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Call home?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1675523733-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
+			"character": "character-1675587258.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes hello?"
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hi mom. How've you been?"
+		},
+		{
+			"character": "character-1675587258.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh it's so nice to finally hear from you! How are you, dear?"
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I've been better. A little better now though."
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1655540927.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I don't really know what to say though...\nAlso it would be weird if I've  just call suddenly. "
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {

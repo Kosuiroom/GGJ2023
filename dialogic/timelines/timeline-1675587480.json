@@ -4,7 +4,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I can't find anything in here like this. "
+			"text": "I'm sick of my bed like this."
 		},
 		{
 			"character": "character-1655540927.json",
@@ -13,7 +13,7 @@
 
 			],
 			"portrait": "",
-			"question": "Start organize and fold cloths?"
+			"question": "Start making the bed?"
 		},
 		{
 			"choice": "Yes",
@@ -34,7 +34,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "And... Last shirt one!\nHuh... Who knew I actually had this much space in here?"
+			"text": "There! Now it will start to look a little better in here if I just keep doing this."
 		},
 		{
 			"choice": "No",
@@ -47,7 +47,7 @@
 			"character": "character-1655540927.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Whatever. I'll just keep using this hoodie instead... Why bother anything else..."
+			"text": "What's the point though. I'll just get messy tomorrow anyway."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -59,7 +59,7 @@
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1655540652.json",
-		"name": "ward"
+		"file": "timeline-1675587480.json",
+		"name": "bed"
 	}
 }
