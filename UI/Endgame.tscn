@@ -371,7 +371,7 @@ texture = ExtResource( 7 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 559, 295 )
 frames = SubResource( 74 )
-frame = 14
+frame = 22
 playing = true
 
 [connection signal="pressed" from="MenuItems/Return" to="." method="_on_Return_pressed"]
