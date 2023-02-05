@@ -1,11 +1,11 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://Actors/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/UI black bar.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Kitchen Living room.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Bathroom walls.png" type="Texture" id=3]
 [ext_resource path="res://levels/FirstScene.gd" type="Script" id=4]
-[ext_resource path="res://Assets/BedRoom.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Bathroom.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Bedroom wall.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Kitchen walls.png" type="Texture" id=6]
 [ext_resource path="res://levels/item.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Wardrobe.png" type="Texture" id=8]
 [ext_resource path="res://Assets/UI Orange bar.png" type="Texture" id=9]
@@ -15,7 +15,7 @@
 [ext_resource path="res://Assets/Picture.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Dishes.png" type="Texture" id=14]
 [ext_resource path="res://Assets/Sofa.png" type="Texture" id=15]
-[ext_resource path="res://Assets/Key Bowl.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Door.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Fridge.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Bath Sink.png" type="Texture" id=18]
 [ext_resource path="res://Assets/Laundry Basket.png" type="Texture" id=19]
@@ -24,6 +24,14 @@
 [ext_resource path="res://Items/items.tres" type="Material" id=22]
 [ext_resource path="res://Assets/Bed.png" type="Texture" id=23]
 [ext_resource path="res://Assets/mixkit-light-rain-looping-1249.wav" type="AudioStream" id=24]
+[ext_resource path="res://Assets/Hat Shelf.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Window.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Book Shelf.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Cabins.png" type="Texture" id=28]
+[ext_resource path="res://Assets/TV Sofa.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Sink Mirror.png" type="Texture" id=30]
+[ext_resource path="res://Assets/TV.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Toilet.png" type="Texture" id=32]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1535, 17.5 )
@@ -70,7 +78,7 @@ script = ExtResource( 4 )
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 513, 302 )
 scale = Vector2( 4, 4 )
-texture = ExtResource( 3 )
+texture = ExtResource( 6 )
 
 [node name="Sprite4" type="Sprite" parent="."]
 position = Vector2( -510, 300 )
@@ -80,7 +88,7 @@ texture = ExtResource( 5 )
 [node name="Sprite3" type="Sprite" parent="."]
 position = Vector2( 1535, 302 )
 scale = Vector2( 4, 4 )
-texture = ExtResource( 6 )
+texture = ExtResource( 3 )
 
 [node name="Floor" type="StaticBody2D" parent="."]
 position = Vector2( 517, 519 )
@@ -127,6 +135,16 @@ limit_right = 10000
 limit_bottom = 10000
 
 [node name="bathroom" type="Node" parent="."]
+
+[node name="sink mirror" type="Sprite" parent="bathroom"]
+position = Vector2( 1537, 301 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 30 )
+
+[node name="toilet" type="Sprite" parent="bathroom"]
+position = Vector2( 1537, 301 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 32 )
 
 [node name="sink" type="Node2D" parent="bathroom"]
 script = ExtResource( 7 )
@@ -243,13 +261,41 @@ moodscore = 10
 [node name="Sprite" type="Sprite" parent="kitchen/bowl"]
 position = Vector2( 240, -344 )
 scale = Vector2( 4.42969, 3.83667 )
-texture = ExtResource( 16 )
+texture = ExtResource( 29 )
 
 [node name="itemname" type="Area2D" parent="kitchen/bowl"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="kitchen/bowl/itemname"]
 position = Vector2( -49, -209 )
 shape = SubResource( 10 )
+
+[node name="tv" type="Node2D" parent="kitchen"]
+position = Vector2( 306, 652 )
+
+[node name="Sprite" type="Sprite" parent="kitchen/tv"]
+position = Vector2( 240, -344 )
+scale = Vector2( 4.42969, 3.83667 )
+texture = ExtResource( 31 )
+
+[node name="Cabin" type="Sprite" parent="."]
+position = Vector2( 506, 301 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 28 )
+
+[node name="window" type="Sprite" parent="."]
+position = Vector2( 506, 301 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 26 )
+
+[node name="Door" type="Sprite" parent="."]
+position = Vector2( 506, 301 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 16 )
+
+[node name="Hat shelf" type="Sprite" parent="."]
+position = Vector2( 506, 301 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 25 )
 
 [node name="Bedroom" type="Node" parent="."]
 
@@ -299,14 +345,14 @@ dialog = "bed"
 moodscore = 15
 
 [node name="Sprite" type="Sprite" parent="Bedroom/bed"]
-position = Vector2( -527, 300 )
+position = Vector2( 472, -111 )
 scale = Vector2( 4.42969, 3.83667 )
 texture = ExtResource( 23 )
 
 [node name="itemname" type="Area2D" parent="Bedroom/bed"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/bed/itemname"]
-position = Vector2( 58, 29 )
+position = Vector2( 58, 10 )
 shape = SubResource( 18 )
 
 [node name="bookshelf" type="Node2D" parent="Bedroom"]
@@ -317,8 +363,9 @@ dialog = "bookshelf"
 moodscore = 15
 
 [node name="Sprite" type="Sprite" parent="Bedroom/bookshelf"]
-position = Vector2( -568, 297 )
+position = Vector2( -572, 293 )
 scale = Vector2( 4.42969, 3.83667 )
+texture = ExtResource( 27 )
 
 [node name="itemname" type="Area2D" parent="Bedroom/bookshelf"]
 
