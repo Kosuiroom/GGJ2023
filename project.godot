@@ -113,6 +113,10 @@ EventBuss="*res://Scripts/Autoloaded/EventBuss.gd"
 KeyPersistance="*res://Scripts/Autoloaded/KeyPersistance.gd"
 GlobalVariables="*res://Scripts/Autoloaded/GlobalVariables.gd"
 
+[display]
+
+window/size/resizable=false
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogic/plugin.cfg" )

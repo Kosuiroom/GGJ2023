@@ -40,7 +40,7 @@ extents = Vector2( 58.5, 41 )
 extents = Vector2( 29, 45 )
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 68, 133.5 )
+extents = Vector2( 43.5, 133.5 )
 
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 37, 77 )
@@ -195,7 +195,7 @@ texture = ExtResource( 8 )
 [node name="itemname" type="Area2D" parent="Bedroom/ward"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/ward/itemname"]
-position = Vector2( -384, 360 )
+position = Vector2( -385, 358 )
 shape = SubResource( 11 )
 
 [node name="picture" type="Node2D" parent="Bedroom"]
