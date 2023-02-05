@@ -7,6 +7,8 @@ var inkitch := true
 var inbed := false
 var inbath := false
 
+
+
 func _on_tobath_body_exited(body):
 	if body.name == 'Player' && inkitch == false && inbath == true:
 		inkitch = true

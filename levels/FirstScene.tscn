@@ -1,12 +1,17 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Actors/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/UI black bar.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Kitchen Living room.png" type="Texture" id=3]
 [ext_resource path="res://levels/FirstScene.gd" type="Script" id=4]
 [ext_resource path="res://Assets/BedRoom.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Bathroom.png" type="Texture" id=6]
 [ext_resource path="res://levels/item.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Wardrobe.png" type="Texture" id=8]
+[ext_resource path="res://Assets/UI Orange bar.png" type="Texture" id=9]
+[ext_resource path="res://levels/mood.gd" type="Script" id=10]
+[ext_resource path="res://levels/mood2.gd" type="Script" id=11]
+[ext_resource path="res://levels/mood3.gd" type="Script" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1535, 17.5 )
@@ -101,6 +106,54 @@ texture = ExtResource( 8 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/wardrobe/itemname"]
 position = Vector2( -379, 352 )
 shape = SubResource( 4 )
+
+[node name="mood" type="TextureProgress" parent="."]
+margin_left = -144.0
+margin_top = -194.0
+margin_right = 60.0
+margin_bottom = 38.0
+rect_scale = Vector2( 3, 4 )
+min_value = 1.0
+max_value = 200.0
+step = 2.0
+value = 1.0
+exp_edit = true
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 9 )
+fill_mode = 3
+script = ExtResource( 10 )
+
+[node name="mood2" type="TextureProgress" parent="."]
+margin_left = 886.0
+margin_top = -186.0
+margin_right = 1090.0
+margin_bottom = 46.0
+rect_scale = Vector2( 3, 4 )
+min_value = 1.0
+max_value = 200.0
+step = 2.0
+value = 24.0
+exp_edit = true
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 9 )
+fill_mode = 3
+script = ExtResource( 11 )
+
+[node name="mood3" type="TextureProgress" parent="."]
+margin_left = -1151.0
+margin_top = -186.0
+margin_right = -947.0
+margin_bottom = 46.0
+rect_scale = Vector2( 3, 4 )
+min_value = 1.0
+max_value = 200.0
+step = 2.0
+value = 24.0
+exp_edit = true
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 9 )
+fill_mode = 3
+script = ExtResource( 12 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 298, 367 )
