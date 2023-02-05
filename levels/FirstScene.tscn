@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Actors/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/UI black bar.png" type="Texture" id=2]
@@ -13,7 +13,10 @@
 [ext_resource path="res://levels/mood2.gd" type="Script" id=11]
 [ext_resource path="res://levels/mood3.gd" type="Script" id=12]
 [ext_resource path="res://Assets/Picture.png" type="Texture" id=13]
-[ext_resource path="res://Assets/Book Shelf.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Dishes.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Sofa.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Key Bowl.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Fridge.png" type="Texture" id=17]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1535, 17.5 )
@@ -24,14 +27,23 @@ extents = Vector2( 6, 198.75 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 9, 199.5 )
 
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 96, 136.25 )
-
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 47, 84.75 )
-
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 74.5, 130.5 )
+extents = Vector2( 48, 129.25 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 45, 158 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 58.5, 41 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 29, 45 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 68, 133.5 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 37, 77 )
 
 [node name="FirstScene" type="Node2D"]
 script = ExtResource( 4 )
@@ -76,7 +88,6 @@ shape = SubResource( 2 )
 
 [node name="kitchenkamera" type="Camera2D" parent="."]
 position = Vector2( 513, 302 )
-current = true
 limit_left = -1000000
 limit_top = -100000
 limit_right = 10000
@@ -96,24 +107,96 @@ limit_top = -100000
 limit_right = 10000
 limit_bottom = 10000
 
+[node name="kitchen" type="Node" parent="."]
+
+[node name="dishes" type="Node2D" parent="kitchen"]
+script = ExtResource( 7 )
+itemName = "dishes"
+dialog = "dishes"
+moodscore = 10
+
+[node name="Sprite" type="Sprite" parent="kitchen/dishes"]
+position = Vector2( 487, 309 )
+scale = Vector2( 4.42969, 3.83667 )
+texture = ExtResource( 14 )
+
+[node name="itemname" type="Area2D" parent="kitchen/dishes"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kitchen/dishes/itemname"]
+position = Vector2( 739, 395 )
+shape = SubResource( 6 )
+
+[node name="fridge" type="Node2D" parent="kitchen"]
+script = ExtResource( 7 )
+itemName = "fridge"
+dialog = "fridge"
+moodscore = 10
+
+[node name="Sprite" type="Sprite" parent="kitchen/fridge"]
+position = Vector2( 472, 294 )
+scale = Vector2( 4.42969, 4.3 )
+texture = ExtResource( 17 )
+
+[node name="itemname" type="Area2D" parent="kitchen/fridge"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kitchen/fridge/itemname"]
+position = Vector2( 921, 334 )
+shape = SubResource( 13 )
+
+[node name="sofa" type="Node2D" parent="kitchen"]
+position = Vector2( 39, -1 )
+script = ExtResource( 7 )
+itemName = "sofa"
+dialog = "sofa"
+moodscore = 10
+
+[node name="Sprite" type="Sprite" parent="kitchen/sofa"]
+position = Vector2( 487, 309 )
+scale = Vector2( 4.42969, 3.83667 )
+texture = ExtResource( 15 )
+
+[node name="itemname" type="Area2D" parent="kitchen/sofa"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kitchen/sofa/itemname"]
+position = Vector2( 384, 446 )
+shape = SubResource( 9 )
+
+[node name="bowl" type="Node2D" parent="kitchen"]
+position = Vector2( 306, 652 )
+script = ExtResource( 7 )
+itemName = "bowl"
+dialog = "bowl"
+moodscore = 10
+
+[node name="Sprite" type="Sprite" parent="kitchen/bowl"]
+position = Vector2( 240, -344 )
+scale = Vector2( 4.42969, 3.83667 )
+texture = ExtResource( 16 )
+
+[node name="itemname" type="Area2D" parent="kitchen/bowl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kitchen/bowl/itemname"]
+position = Vector2( -43, -204 )
+shape = SubResource( 10 )
+
 [node name="Bedroom" type="Node" parent="."]
 
-[node name="wardrobe" type="Node2D" parent="Bedroom"]
+[node name="ward" type="Node2D" parent="Bedroom"]
 script = ExtResource( 7 )
 itemName = "ward"
 dialog = "ward"
 moodscore = 10
 
-[node name="Sprite" type="Sprite" parent="Bedroom/wardrobe"]
-position = Vector2( -527, 299.75 )
+[node name="Sprite" type="Sprite" parent="Bedroom/ward"]
+position = Vector2( -529, 301 )
 scale = Vector2( 4.42969, 3.83667 )
 texture = ExtResource( 8 )
 
-[node name="itemname" type="Area2D" parent="Bedroom/wardrobe"]
+[node name="itemname" type="Area2D" parent="Bedroom/ward"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/wardrobe/itemname"]
-position = Vector2( -380, 355 )
-shape = SubResource( 4 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/ward/itemname"]
+position = Vector2( -384, 360 )
+shape = SubResource( 11 )
 
 [node name="picture" type="Node2D" parent="Bedroom"]
 script = ExtResource( 7 )
@@ -122,15 +205,15 @@ dialog = "picture"
 moodscore = 15
 
 [node name="Sprite" type="Sprite" parent="Bedroom/picture"]
-position = Vector2( -527, 299.75 )
+position = Vector2( -527, 300 )
 scale = Vector2( 4.42969, 3.83667 )
 texture = ExtResource( 13 )
 
 [node name="itemname" type="Area2D" parent="Bedroom/picture"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/picture/itemname"]
-position = Vector2( -704, 388 )
-shape = SubResource( 5 )
+position = Vector2( -688, 391 )
+shape = SubResource( 12 )
 
 [node name="bookshelf" type="Node2D" parent="Bedroom"]
 script = ExtResource( 7 )
@@ -141,12 +224,11 @@ moodscore = 15
 [node name="Sprite" type="Sprite" parent="Bedroom/bookshelf"]
 position = Vector2( -568, 297 )
 scale = Vector2( 4.42969, 3.83667 )
-texture = ExtResource( 14 )
 
 [node name="itemname" type="Area2D" parent="Bedroom/bookshelf"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom/bookshelf/itemname"]
-position = Vector2( -144, 347 )
+position = Vector2( -162, 356 )
 shape = SubResource( 6 )
 
 [node name="mood" type="TextureProgress" parent="."]
@@ -201,7 +283,7 @@ fill_mode = 3
 script = ExtResource( 12 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 298, 367 )
+position = Vector2( 625, 363 )
 z_index = 1
 __meta__ = {
 "_edit_group_": true
@@ -209,8 +291,16 @@ __meta__ = {
 
 [connection signal="body_exited" from="tobath" to="." method="_on_tobath_body_exited"]
 [connection signal="body_exited" from="tobed" to="." method="_on_tobed_body_exited"]
-[connection signal="body_entered" from="Bedroom/wardrobe/itemname" to="Bedroom/wardrobe" method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="Bedroom/wardrobe/itemname" to="Bedroom/wardrobe" method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="kitchen/dishes/itemname" to="kitchen/dishes" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="kitchen/dishes/itemname" to="kitchen/dishes" method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="kitchen/fridge/itemname" to="kitchen/fridge" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="kitchen/fridge/itemname" to="kitchen/fridge" method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="kitchen/sofa/itemname" to="kitchen/sofa" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="kitchen/sofa/itemname" to="kitchen/sofa" method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="kitchen/bowl/itemname" to="kitchen/bowl" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="kitchen/bowl/itemname" to="kitchen/bowl" method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="Bedroom/ward/itemname" to="Bedroom/ward" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Bedroom/ward/itemname" to="Bedroom/ward" method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="Bedroom/picture/itemname" to="Bedroom/picture" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Bedroom/picture/itemname" to="Bedroom/picture" method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="Bedroom/bookshelf/itemname" to="Bedroom/bookshelf" method="_on_Area2D_body_entered"]
